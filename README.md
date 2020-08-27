@@ -1,0 +1,1 @@
+This repo is about 'Google homepage look-alike' made using HTML and CSS.
