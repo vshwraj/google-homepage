@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google</title>
+    <link rel="icon" href="images/google-g-logo.svg" type="image/x-icon"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .head {
+            display: flex ;
+            justify-content: flex-end;
+            margin-right: 15px;
+            color: black;
+            font-size: 13px;
+        }
+
+        .headlinks {
+            margin-right: 15px;
+            margin-top: 23px;
+            text-decoration: none;
+            color: black;
+        }
+        .headlinks:hover{
+            opacity: 0.75;
+            text-decoration-line: underline;
+        }
+
+        .apps {
+            margin-top: 16px;
+            opacity: 55%;
+        }
+        .apps:hover {
+            opacity: 100%;
+        }
+
+        .signin{
+            display: flex;
+            justify-content: center;
+            background:#4387fd;
+            width: 69px;
+            border-radius: 2px;
+            margin-top: 16px;
+            padding:7px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            cursor: default;
+        }
+        .signin:hover {
+            box-shadow: 0 1px 0 rgba(0,0,0,0.15);
+        }
+
+        .center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo {
+            margin-top: 110px; 
+        }
+
+        .searchbar {
+            margin-top: 23px;
+            width: 584px;
+            height: 46px;
+            min-width: 56px;
+            background-color:transparent;
+            border: 1px solid rgb(0,0,0,0.1);
+            border-radius: 50px;
+        }
+        .searchbar:hover {
+            border: none;
+            box-shadow: 0 1px 3px 2px  rgba(0,0,0,0.15);
+        }
+
+        .search-icon {
+            position: relative;
+            z-index: 0;
+            top:-35px;
+            right:267px
+        }
+
+        .mic {
+            position: relative;
+            z-index: 0;
+            top: -54px;
+            left: 263px;
+        }
+
+        .srchbtn {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: -11px;
+            border-radius: 3px;
+            padding: 10px 15px;
+            height: 36px;
+
+            text-decoration: none;
+            text-align: center;
+            color: #5F6368;
+            font-size: 14px;
+        }
+        .button1 {
+            background-color: #f2f2f2;
+            width: 130px;
+            margin-right: 12px;
+        }
+        .button2 {
+            background-color: #f2f2f2;
+            width: 145px;
+        }
+        .button1:hover, .button2:hover {
+            border: 1px solid lightgrey;
+            color: black;
+            background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+            box-shadow: 0 1px 0 rgba(0,0,0,0.15);
+        }
+
+        .langs {
+            font-size: small;
+            margin-top: 16px;
+        }
+        .lang {
+            justify-content: center;
+            margin-top: 25px;
+            padding: 0 3px;
+            text-decoration: none;
+            color: darkblue;
+            font-size: small;  
+        }
+        .lang:hover{
+            text-decoration: underline;
+        }
+        
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            background-color: #f2f2f2;
+            border-top: 1px solid lightgray;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 11px;
+        }
+
+        .footlinks {
+            color: black;
+            opacity: 0.7;
+            text-decoration: none;
+            margin: 12px;
+        }
+        .footlinks:first-of-type{
+            margin-left:30px;
+        }
+        .footlinks:last-of-type {
+            margin-right: 30px;
+        }
+        .footlinks:hover {
+            text-decoration-line: underline;
+        }
+
+        .dropdup:hover .dropup-menu {
+            display: flex;
+            flex-direction: column;
+            background-color: #FFF;
+            border: 1px solid gray;
+            box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+            max-width: 185px;
+            position: relative;
+            bottom: 320px;
+            left: 35px;
+            z-index: 1;
+        }
+        .dropup-menu a {
+            list-style: none;
+            padding: 10px;
+            margin: 5px 20px;
+            text-decoration: none;
+            color: rgba(0,0,0,0.7);
+        }
+        .dropup-menu a:first-of-type {
+            margin-top: -10px;
+        }
+        .dropup-menu a:last-of-type {
+            margin-bottom: 15px;
+        }
+        .dropup-menu a:hover {
+            text-decoration: underline;
+        }
+        .dropup-menu{
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="head">
+        <a class="headlinks head" href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
+        <a class="headlinks head" href="https://www.google.co.in/imghp?hl=en&tab=wi&ogbl">Images</a>
+        <img src="images/apps.png" class="apps head" role="button" name="Google Apps" title="Google Apps" href="https://www.google.co.in/intl/en/about/products?tab=wh">
+        <a class="signin head" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAAQ">Sign in</a>
+    </div>
+    <div class="center">
+        <div class="logo"><img src="images/googlelogo_color_272x92dp.png"/></div>
+        <div class="searchbar" title="Search"></div>
+        <img class="search-icon" src="images/search-icon.svg" width="21"/>
+        <img class="mic" src="images/google_mic.svg" label="Search by voice" width="14"/>
+        <div class="srchbtn">
+            <a class="srchbtn button1" href="#">Google Search</a>
+            <a class="srchbtn button2" href="https://www.google.com/doodles/">I'm Feeling Lucky</a>
+        </div>
+        <div class="langs">Google offered in:
+            <a class="lang" href="https://www.google.com/setprefs?sig=0_bUgDPy8HDK8TAGdhXZM8BjrWeFA%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwjrx5PkzvLrAhVwzjgGHftyBUwQ2ZgBCA8">हिन्दी </a>
+            <a class="lang" href="https://www.google.com/setprefs?sig=0_bUgDPy8HDK8TAGdhXZM8BjrWeFA%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwjrx5PkzvLrAhVwzjgGHftyBUwQ2ZgBCBA">বাংলা </a>
+            <a class='lang' href="https://www.google.com/setprefs?sig=0_bUgDPy8HDK8TAGdhXZM8BjrWeFA%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwjrx5PkzvLrAhVwzjgGHftyBUwQ2ZgBCBE">తెలుగు </a>
+            <a class='lang' href="https://www.google.com/setprefs?sig=0_bUgDPy8HDK8TAGdhXZM8BjrWeFA%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwjrx5PkzvLrAhVwzjgGHftyBUwQ2ZgBCBI">मराठी </a>
+            <a class='lang' href="https://www.google.com/setprefs?sig=0_bUgDPy8HDK8TAGdhXZM8BjrWeFA%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwjrx5PkzvLrAhVwzjgGHftyBUwQ2ZgBCBM">தமிழ் </a>
+            <a class='lang' href="https://www.google.com/setprefs?sig=0_bUgDPy8HDK8TAGdhXZM8BjrWeFA%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwjrx5PkzvLrAhVwzjgGHftyBUwQ2ZgBCBQ">ગુજરાતી </a>
+            <a class='lang' href="https://www.google.com/setprefs?sig=0_bUgDPy8HDK8TAGdhXZM8BjrWeFA%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwjrx5PkzvLrAhVwzjgGHftyBUwQ2ZgBCBU">ಕನ್ನಡ </a>
+            <a class='lang' href="https://www.google.com/setprefs?sig=0_bUgDPy8HDK8TAGdhXZM8BjrWeFA%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwjrx5PkzvLrAhVwzjgGHftyBUwQ2ZgBCBY">മലയാളം </a>
+            <a class='lang' href="https://www.google.com/setprefs?sig=0_bUgDPy8HDK8TAGdhXZM8BjrWeFA%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwjrx5PkzvLrAhVwzjgGHftyBUwQ2ZgBCBc">ਪੰਜਾਬੀ</a>
+        </div>
+    </div>
+
+    
+    <div class='footer'>
+        <div> 
+            <a class="footlinks" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiw_dDe-7zrAhUkzTgGHR6VBhYQkdQCCB4&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_in%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw3Oj62V1xNd5oAI6Vxou5Lx">Advertising</a>
+
+            <a class="footlinks" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjCwZCZ9LzrAhXQb30KHUNZA5EQktQCCB8&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K">Business</a>
+
+            <a class="footlinks" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjCwZCZ9LzrAhXQb30KHUNZA5EQkNQCCCA&url=https%3A%2F%2Fabout.google%2F%3Futm_source%3Dgoogle-IN%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw33zjaJZ_ogw8iPEm4kPGYh">About</a>
+        
+            <a class="footlinks" href="https://google.com/search/howsearchworks/?fg=1">How Search works</a>
+        </div>
+        <div>
+            <a class="footlinks" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiw_dDe-7zrAhUkzTgGHR6VBhYQ8awCCBo&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Den-IN%26fg%3D1&usg=AOvVaw2y-DJehqHRQuhUzwsARmol">Privacy</a>
+
+            <a class="footlinks" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiw_dDe-7zrAhUkzTgGHR6VBhYQ8qwCCBs&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den-IN%26fg%3D1&usg=AOvVaw25sheD5OGrPUyBw_FdCQOy">Terms</a>
+
+            <a class="footlinks dropup">Settings
+                <div class="dropup-menu">
+                    <a href="https://www.google.com/preferences?hl=en-IN&fg=1">Search settings</a>
+                    <a href="https://www.google.com/advanced_search?hl=en-IN&fg=1">Advanced search</a>
+                    <a href="https://www.google.com/history/privacyadvisor/search/unauth?utm_source=googlemenu&fg=1">Your data in Search</a>
+                    <a href="https://www.google.com/history/optout?hl=en-IN&fg=1">Search activity</a>
+                    <a href="https://support.google.com/websearch/?p=ws_results_help&hl=en-IN&fg=1">Search help</a>
+                    <a href="https://www.google.com/#">Send feedback</a>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
